@@ -8,10 +8,3 @@ body {
 h1 {
   color: #007bff;
 }
-
-.background {
-  background-image: url('/src/assets/image.png');
-  width: 100px;
-  height: 100px;
-  background-size: cover;
-}
