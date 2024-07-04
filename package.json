@@ -3,9 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "build": "vite build",
-    "test": "jest"
+    "test": "jest --config jest.config.js"
   },
   "devDependencies": {
-    "jest": "^27.0.0"
+    "@eslint/js": "^9.6.0",
+    "eslint": "^9.6.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "globals": "^15.8.0",
+    "jest": "^27.0.0",
+    "jest-junit": "^12.0.0"
   }
 }

@@ -16,7 +16,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '16'  # Choisissez la version de Node.js appropriée pour votre projet
+        node-version: '16'
 
     - name: Install dependencies
       run: npm install
@@ -31,4 +31,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./dist  # Remplacez ce chemin par le répertoire de build de votre projet
+        publish_dir: ./dist
