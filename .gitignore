@@ -22,3 +22,13 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Node modules
+node_modules/
+
+# Jest JUnit reports
+reports/
+
+# Vite dist folder
+dist/
+
