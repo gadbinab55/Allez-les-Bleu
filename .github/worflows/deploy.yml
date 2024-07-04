@@ -1,7 +1,10 @@
-name: Deploy static HTML to Pages
+name: CI/CD Pipeline
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -16,10 +19,17 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2
       with:
+feature/unit-tests-jest
         node-version: '16'
+=======
+        node-version: '16' 
+main
 
     - name: Install dependencies
       run: npm install
+
+    - name: Run lint
+      run: npm run lint
 
     - name: Run tests
       run: npm test
@@ -31,4 +41,8 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+feature/unit-tests-jest
         publish_dir: ./dist
+=======
+        publish_dir: ./dist  
+main
