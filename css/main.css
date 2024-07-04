@@ -10,7 +10,7 @@ h1 {
 }
 
 .background {
-  background-image: url('/src/assets/image.jpeg');
+  background-image: url('/assets/image.jpeg');
   width: 100px;
   height: 100px;
   background-size: cover;
