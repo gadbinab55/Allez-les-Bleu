@@ -1,4 +1,4 @@
-/* main.css */
+/* src/main.css */
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
@@ -9,3 +9,9 @@ h1 {
   color: #007bff;
 }
 
+.background {
+  background-image: url('/src/assets/image.jpeg');
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
